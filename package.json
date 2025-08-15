@@ -1,0 +1,23 @@
+{
+  "name": "asset-listing",
+  "version": "1.0.0",
+  "description": "– “Asset Listing API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jithu619/Asset-Listing.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jithu619/Asset-Listing/issues"
+  },
+  "homepage": "https://github.com/jithu619/Asset-Listing#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

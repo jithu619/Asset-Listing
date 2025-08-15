@@ -1,11 +1,12 @@
+
 const express = require('express');
 const app = express();
-const port = 3000;
+const port = 5000;
 
 let assets=[];
 let next=1;
 
-app.use(express.json);
+app.use(express.json());
 
 
 //Code - POST
@@ -26,6 +27,10 @@ res.status(201).json(newAsset);
 
 
 //Code - GET
+app.get('/', (req, res) => {
+  console.log('Received GET / at', new Date());
+  res.send('API is running! Try /assets for endpoints.');
+});
 
 app.get('/assets',(req,res) => { const location = req.query;
 
@@ -38,6 +43,6 @@ app.get('/assets',(req,res) => { const location = req.query;
 }
 );
 
-app.listen(port, () => {
-    console.log(`Server running on http://localhost:${port}`);
+app.listen(4000, () => {
+    console.log(`Server running on http://localhost:4000`);
   });

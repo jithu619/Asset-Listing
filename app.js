@@ -32,17 +32,18 @@ app.get('/', (req, res) => {
   res.send('API is running! Try /assets for endpoints.');
 });
 
-app.get('/assets',(req,res) => { const location = req.query;
+app.get('/assets',(req,res) => { const {location} = req.query;
 
   let results=assets;
-  if(location)
-    results=assets.filter(assets.location.toLowerCase === location.toLowerCase());
-
+  if(location){
+    console.log(location);
+    results=assets.filter(asset=>asset.location.toLowerCase() === location.toLowerCase());
+  }
     res.json(results);
 
 }
 );
 
-app.listen(4000, () => {
-    console.log(`Server running on http://localhost:4000`);
+app.listen(port, () => {
+    console.log(`Server running on http://localhost:${port}`);
   });

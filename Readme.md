@@ -1,4 +1,4 @@
- – “Asset Listing API
+ – Asset Listing API
 
  # Asset Listing API
 

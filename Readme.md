@@ -4,7 +4,10 @@
 
 A simple Node.js + Express API to store and retrieve a list of assets in memory.
 
-## Setup
+## Live Server for Test
+ #Hosted on Render for online test. try : https://asset-listing.onrender.com with the same end points below
+
+## Local Setup
 1. Clone the repository.
 2. Run `npm install` to install dependencies.
 
